@@ -30,33 +30,33 @@
         <div class="calculator">
             <table>
                 <tr>
-                    <td ng-click="ClickClear()" class="outside">c</td>
-                    <td ng-click="ClickBackSpace()" class="outside">⇤</td>
-                    <td ng-click="ClickSwitch()" class="outside">±</td>
-                    <td ng-click="ClickOperator('/')" class="outside">÷</td>
+                    <td title="Temizle" ng-click="ClickClear()" class="outside">c</td>
+                    <td title="Sil" ng-click="ClickBackSpace()" class="outside">⇤</td>
+                    <td title="Pozitif-Negatif" ng-click="ClickSwitch()" class="outside">±</td>
+                    <td title="Böl" ng-click="ClickOperator('/')" class="outside">÷</td>
                 </tr>
                 <tr>
                     <td ng-click="ClickNumber(7)">7</td>
                     <td ng-click="ClickNumber(8)">8</td>
                     <td ng-click="ClickNumber(9)">9</td>
-                    <td ng-click="ClickOperator('*')" class="outside">×</td>
+                    <td title="Çarp" ng-click="ClickOperator('*')" class="outside">×</td>
                 </tr>
                 <tr>
                     <td ng-click="ClickNumber(4)">4</td>
                     <td ng-click="ClickNumber(5)">5</td>
                     <td ng-click="ClickNumber(6)">6</td>
-                    <td ng-click="ClickOperator('-')" class="outside">-</td>
+                    <td title="Çıkart" ng-click="ClickOperator('-')" class="outside">-</td>
                 </tr>
                 <tr>
                     <td ng-click="ClickNumber(1)">1</td>
                     <td ng-click="ClickNumber(2)">2</td>
                     <td ng-click="ClickNumber(3)">3</td>
-                    <td ng-click="ClickOperator('+')" class="outside">+</td>
+                    <td title="Topla" ng-click="ClickOperator('+')" class="outside">+</td>
                 </tr>
                 <tr>
                     <td ng-click="ClickNumber(0)" colspan="2">0</td>
                     <td ng-click="ClickNumber('.')">.</td>
-                    <td ng-click="ClickResult()" class="equal">=</td>
+                    <td title="Sonuç" ng-click="ClickResult()" class="equal">=</td>
                 </tr>
             </table>
         </div>
