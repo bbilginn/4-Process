@@ -26,31 +26,31 @@
         <div class="calculator">
             <table>
                 <tr>
-                    <td class="outside">AC</td>
-                    <td class="outside">C</td>
-                    <td class="outside">÷</td>
-                    <td class="outside">×</td>
+                    <td ng-click="ClickClear()" class="outside">c</td>
+                    <td class="outside">⇤</td>
+                    <td ng-click="ClickOperator('/')" class="outside">÷</td>
+                    <td ng-click="ClickOperator('*')" class="outside">×</td>
                 </tr>
                 <tr>
-                    <td ng-click="Number(7)">7</td>
-                    <td ng-click="Number(8)">8</td>
-                    <td ng-click="Number(9)">9</td>
-                    <td class="outside">-</td>
+                    <td ng-click="ClickNumber(7)">7</td>
+                    <td ng-click="ClickNumber(8)">8</td>
+                    <td ng-click="ClickNumber(9)">9</td>
+                    <td ng-click="ClickOperator('-')" class="outside">-</td>
                 </tr>
                 <tr>
-                    <td ng-click="Number(4)">4</td>
-                    <td ng-click="Number(5)">5</td>
-                    <td ng-click="Number(6)">6</td>
-                    <td class="outside">﹢</td>
+                    <td ng-click="ClickNumber(4)">4</td>
+                    <td ng-click="ClickNumber(5)">5</td>
+                    <td ng-click="ClickNumber(6)">6</td>
+                    <td ng-click="ClickOperator('+')" class="outside">﹢</td>
                 </tr>
                 <tr>
-                    <td ng-click="Number(1)">1</td>
-                    <td ng-click="Number(2)">2</td>
-                    <td ng-click="Number(3)">3</td>
-                    <td rowspan="2" class="equal">=</td>
+                    <td ng-click="ClickNumber(1)">1</td>
+                    <td ng-click="ClickNumber(2)">2</td>
+                    <td ng-click="ClickNumber(3)">3</td>
+                    <td ng-click="ClickResult()" rowspan="2" class="equal">=</td>
                 </tr>
                 <tr>
-                    <td ng-click="Number(0)" colspan="2">0</td>
+                    <td ng-click="ClickNumber(0)" colspan="2">0</td>
                     <td>.</td>
                 </tr>
             </table>
