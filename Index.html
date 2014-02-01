@@ -21,13 +21,17 @@
 
     <div class="page" style="margin: 0 auto; margin-top:25px">
         <div class="result">
+            <span class="pull-right text-info" style="margin:5px 5px 0 0">
+                <span ng-model="First">{{First}} </span>
+                <span ng-model="Operator">{{Operator}}</span>
+            </span>
             <p ng-model="Result">{{Result}}</p>
         </div>
         <div class="calculator">
             <table>
                 <tr>
                     <td ng-click="ClickClear()" class="outside">c</td>
-                    <td class="outside">⇤</td>
+                    <td ng-click="ClickBackSpace()" class="outside">⇤</td>
                     <td ng-click="ClickOperator('/')" class="outside">÷</td>
                     <td ng-click="ClickOperator('*')" class="outside">×</td>
                 </tr>
@@ -51,7 +55,7 @@
                 </tr>
                 <tr>
                     <td ng-click="ClickNumber(0)" colspan="2">0</td>
-                    <td>.</td>
+                    <td ng-click="ClickNumber(',')">.</td>
                 </tr>
             </table>
         </div>
