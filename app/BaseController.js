@@ -22,17 +22,17 @@
     $scope.ClickResult = function () {
         switch ($scope.Operator) {
             case '*':
-                $scope.Result = $scope.First * $scope.Result;
+                $scope.Result = parseFloat($scope.First) * parseFloat($scope.Result);
                 break;
             case '/':
-                if ($scope.Result != 0) $scope.Result = $scope.First / $scope.Result;
+                if ($scope.Result != 0) $scope.Result = parseFloat($scope.First) / parseFloat($scope.Result);
                 else alert("Sıfıra bölünemez!");
                 break;
             case '+':
-                $scope.Result = $scope.First + $scope.Result;
+                $scope.Result = parseFloat($scope.First) + parseFloat($scope.Result);
                 break;
             case '-':
-                $scope.Result = $scope.First - $scope.Result;
+                $scope.Result = parseFloat($scope.First) - parseFloat($scope.Result);
                 break;
         }
         FirstAndOperatorClear();
