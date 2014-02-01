@@ -30,6 +30,7 @@ td{
   width:80px;
   border: 1px solid black;
   background-color:#ecf0f1;
+  cursor:pointer;
 }
 .outside{
   background-color:#34495e;

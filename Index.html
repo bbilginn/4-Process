@@ -15,12 +15,13 @@
     <![endif]-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+    <script src="app/BaseController.js"></script>
 </head>
-<body>
+<body ng-controller="BaseController">
 
     <div class="page" style="margin: 0 auto; margin-top:25px">
         <div class="result">
-            <p>500</p>
+            <p ng-model="Result">{{Result}}</p>
         </div>
         <div class="calculator">
             <table>
@@ -31,25 +32,25 @@
                     <td class="outside">×</td>
                 </tr>
                 <tr>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
+                    <td ng-click="Number(7)">7</td>
+                    <td ng-click="Number(8)">8</td>
+                    <td ng-click="Number(9)">9</td>
                     <td class="outside">-</td>
                 </tr>
                 <tr>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
+                    <td ng-click="Number(4)">4</td>
+                    <td ng-click="Number(5)">5</td>
+                    <td ng-click="Number(6)">6</td>
                     <td class="outside">﹢</td>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
+                    <td ng-click="Number(1)">1</td>
+                    <td ng-click="Number(2)">2</td>
+                    <td ng-click="Number(3)">3</td>
                     <td rowspan="2" class="equal">=</td>
                 </tr>
                 <tr>
-                    <td colspan="2">0</td>
+                    <td ng-click="Number(0)" colspan="2">0</td>
                     <td>.</td>
                 </tr>
             </table>
