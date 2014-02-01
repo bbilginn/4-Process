@@ -38,6 +38,14 @@
         FirstAndOperatorClear();
     }
 
+    // Pozitif-Negatif tuşu tıklandığında
+    $scope.ClickSwitch = function () {
+        if ($scope.Result.toString().substring(0, 1) == "-")
+            $scope.Result = $scope.Result.toString().replace('-', '');
+        else
+            $scope.Result = "-" + $scope.Result;
+    }
+
     // Silme tuşu tıklandığında
     $scope.ClickBackSpace = function () {
         $scope.Result = $scope.Result.toString().substring(0, $scope.Result.toString().length - 1);
